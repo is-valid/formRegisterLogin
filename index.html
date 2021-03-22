@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>registration and login</title>
+    <link href="css/style.css" media="screen" rel="stylesheet">
+    <link href="css/reset.css" media="screen" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="flat-design-form">
+            <ul class="tabs">
+                <li><a class="active" href="#login" id="login-tab">Login</a></li>
+                <li><a href="#register" id="register-tab"> Registration</a></li>
+            </ul>
+            <div class="form-display show" id="login">
+                <h1>Login</h1>
+                <form action="" method="" novalidate="">
+                    <fieldset>
+                        <ul>
+                            <li>
+                                <div class="item">
+                                    <input id="userName" class="item" placeholder="Username" type="text">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <input id="password" placeholder="Password" type="password">
+                                </div>
+                            </li>
+                            <li><input id="sendLogin" class="button-login" type="submit" value="Login"></li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="form-display hide" id="register">
+                <h1>Registration</h1>
+                <form action="" method="" id="form" novalidate="">
+                    <fieldset>
+                        <ul>
+                            <li>
+                                <div class="item">
+                                    <input id="newUserName" placeholder="Username" type="text">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <input id="newPassword" placeholder="Password" type="text">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <label><input id="newPhone"  placeholder="Phone number" type="phone"></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <input id="newEmail" class='email' placeholder="Email" type="email">
+                                </div>
+                            </li>
+                            <li><input class="button-register" id='sendRegistration' type="submit" value="Sign Up"></li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
